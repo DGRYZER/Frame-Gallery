@@ -1,0 +1,144 @@
+/* Base styles */
+#home {
+    width: 100%;
+    margin: 100px 20px 0; /* Adjust margin for smaller screens */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 80px 20px 20px; /* Adjust top padding for smaller screens */
+    overflow-y: auto;
+}
+
+/* Table styles */
+#table {
+    width: 100%;
+    overflow-x: auto;
+}
+th, td {
+    padding: 8px; /* Adjust the padding as needed */
+    border: 1px solid black;
+}
+
+/* Pagination styles */
+#pagination {
+    display: flex;
+    justify-content: center; /* Center pagination on all screen sizes */
+    align-items: center; /* Center pagination on all screen sizes */
+    margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media only screen and (min-width: 768px) {
+    #home {
+        margin: 100px auto 0; /* Center content on larger screens */
+        padding: 80px; /* Adjust padding for larger screens */
+        max-width: 1200px; /* Limit content width for larger screens */
+    }
+}
+
+#search, #pageNumberInput{
+  height: 35px;
+  width: 250px;
+  font-size: 20px;
+  margin: 0px 0px 10px 0px;
+  padding: 5px 5px 5px 5px;
+}
+
+#search, #pageNumberInput, #searchbtn1, #gobtn1 {
+    margin-right: 15px; /* Add gap between input boxes and buttons */
+  }
+
+
+button {
+  font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add transition effect for smoother hover */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Popup styles */
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.3s ease-in-out, slideInFromLeft 0.5s ease-in-out;
+}
+
+/* Gradient color combination in WhatsApp theme */
+#home {
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    box-shadow: 0px 0px 30px #444aee;
+    margin: 130px 0px 50px 0px;
+    
+}
+
+button {
+    background: linear-gradient(to bottom, #075E54, #128C7E);
+}
+
+#pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  #pagination button {
+    background: linear-gradient(45deg, #25d366, #128c7e);
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    margin: 0 5px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s;
+  }
+  
+  #pagination button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  
+  #pagination button:hover {
+    background: linear-gradient(45deg, #128c7e, #25d366);
+  }
+  
+  #pagination #pagecount {
+    margin: 0 10px;
+  }
+  
+  #pagination #pagecount span {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 2px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #25d366, #128c7e);
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s;
+  }
+  
+  #pagination #pagecount span.active {
+    background: #25d366;
+  }
+  
+  #pagination #pagecount span:hover {
+    background: linear-gradient(45deg, #128c7e, #25d366);
+  }
