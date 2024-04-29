@@ -20,7 +20,7 @@ Features of this project -
   4. Also it has a feature name "jump to any page".
 
 
-IAMGES OF THE DIFFERENT PAGES OF THIS PROJECTS - 👇🏻👇🏻👇🏻
+IMAGES OF THE DIFFERENT PAGES OF THIS PROJECTS - 👇🏻👇🏻👇🏻
 
 Main Page
 
