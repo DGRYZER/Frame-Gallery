@@ -26,22 +26,19 @@ Main Page
 
 ![image](https://github.com/DGRYZER/Frame-Gallery/assets/91932081/9755d98c-a4bc-4231-9a41-07638353765f)
 
-Gallery Page - 1 👇🏻👇🏻👇🏻
+Gallery Page image - 1 👇🏻👇🏻👇🏻
 
 ![image](https://github.com/DGRYZER/Frame-Gallery/assets/91932081/64722b4f-d2a0-4c22-85b0-ad844bb40486)
 
-Gallery Page - 2 👇🏻👇🏻👇🏻
+Gallery Page image - 2 👇🏻👇🏻👇🏻
 
 ![image](https://github.com/DGRYZER/Frame-Gallery/assets/91932081/0ec19f86-436e-462f-bbce-b2b266a1aba8)
 
-
-Gallery Page - 3 👇🏻👇🏻👇🏻
- 
-    a. First Pop Up (If user search any frame only by giving ID, without any Album ID that time it will show the Pop Up with message "Album ID is required") 👇🏻👇🏻👇🏻
+Gallery Page image - 3 => First Pop Up (If user search any frame only by giving ID, without any Album ID that time it will show the Pop Up with message "Album ID is required") 👇🏻👇🏻👇🏻
 
     ![image](https://github.com/DGRYZER/Frame-Gallery/assets/91932081/98797c07-2bdb-4ffe-b808-05c0d8172335)
 
-    b. Seccond Pop Up (If user click any TItle of a frame, it will show the details of that frame.) 👇🏻👇🏻👇🏻
+Gallery Page image - 4 => Seccond Pop Up (If user click any TItle of a frame, it will show the details of that frame.) 👇🏻👇🏻👇🏻
 
     ![image](https://github.com/DGRYZER/Frame-Gallery/assets/91932081/b14a385b-a730-41fc-bd69-d95e9212e5c4)
 
