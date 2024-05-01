@@ -4,8 +4,10 @@ import "./gallery.css";
 
 const Popup = ({ message, onClose }) => (
   <div id="popup">
-    <p>{message}</p>
-    <button onClick={onClose}>Close</button>
+    <div className="popup-content">
+      <p>{message}</p>
+      <button onClick={onClose}>Close</button>
+    </div>
   </div>
 );
 
@@ -239,28 +241,31 @@ const Gallery = () => {
         </button>
       </div>
 
-      <div id="details">
-        {selectedPhoto && (
-          <div>
-            <h2>Details of {selectedPhoto.title}</h2>
-            <p>
-              <b>Album Id:</b> {selectedPhoto.albumId}
-            </p>
-            <p>
-              <b>Id:</b> {selectedPhoto.id}
-            </p>
-            <p>
-              <b>Title:</b> {selectedPhoto.title}
-            </p>
-            <p>
-              <b>URL:</b> {selectedPhoto.url}
-            </p>
-            <p>
-              <b>Thumbnail URL:</b> {selectedPhoto.thumbnailUrl}
-            </p>
-          </div>
-        )}
-      </div>
+      {selectedPhoto && (
+        <Popup
+          message={
+            <>
+              <h2>Details of {selectedPhoto.title}</h2>
+              <p>
+                <b>Album Id:</b> {selectedPhoto.albumId}
+              </p>
+              <p>
+                <b>Id:</b> {selectedPhoto.id}
+              </p>
+              <p>
+                <b>Title:</b> {selectedPhoto.title}
+              </p>
+              <p>
+                <b>URL:</b> {selectedPhoto.url}
+              </p>
+              <p>
+                <b>Thumbnail URL:</b> {selectedPhoto.thumbnailUrl}
+              </p>
+            </>
+          }
+          onClose={() => setSelectedPhoto(null)}
+        />
+      )}
     </div>
   );
 };

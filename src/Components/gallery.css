@@ -142,3 +142,34 @@ button {
   #pagination #pagecount span:hover {
     background: linear-gradient(45deg, #128c7e, #25d366);
   }
+
+
+/* Pop Up CSS */
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to right, #f64f26, #f18f44); /* Change gradient colors as desired */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.popup-content {
+  color: #fff;
+}
+
+#popup button {
+  background-color: #fff;
+  color: #91f250; /* Change button color as desired */
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#popup button:hover {
+  background-color: #ffb9a3; /* Change button hover color as desired */
+}
