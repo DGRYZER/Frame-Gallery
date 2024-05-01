@@ -45,7 +45,7 @@ First Pop Up (If user search any frame only by giving ID, without any Album ID t
 
 Gallery Page image - 4 => 
 
-Seccond Pop Up (If user click any TItle of a frame, it will show the details of that frame.) 👇🏻👇🏻👇🏻
+Second Pop Up (If user click any TItle of a frame, it will show the details of that frame.) 👇🏻👇🏻👇🏻
 
 ![image](https://github.com/DGRYZER/Frame-Gallery/assets/91932081/c9f8bd3b-5909-4ed3-b1be-3d5a86bd0ed8)
 
