@@ -33,7 +33,7 @@ const Gallery = () => {
         if (albumIdSearch && idSearch) {
           url += `&albumId=${albumIdSearch}&id=${idSearch}`;
         } else if (idSearch) {
-          setPopupMessage("AlbumID is required.");
+          setPopupMessage("Album ID is required.");
           setShowAlbumIdPopup(true);
           return;
         } else if (albumIdSearch) {
@@ -47,9 +47,7 @@ const Gallery = () => {
         }
         setContent(responseData);
         setFilteredContent(responseData);
-        const totalPages = Math.ceil(
-          response.headers["x-total-count"] / 10
-        );
+        const totalPages = Math.ceil(response.headers["x-total-count"] / 10);
         setTotalPages(totalPages);
       } catch (error) {
         console.log(error);
@@ -76,7 +74,12 @@ const Gallery = () => {
   };
 
   const handleGoToPage = () => {
-    if (pageNumber >= 1 && pageNumber <= totalPages && !albumIdSearch && !idSearch) {
+    if (
+      pageNumber >= 1 &&
+      pageNumber <= totalPages &&
+      !albumIdSearch &&
+      !idSearch
+    ) {
       setCurrentPage(pageNumber);
     }
   };
@@ -102,14 +105,14 @@ const Gallery = () => {
   const renderPageNumbers = () => {
     const pageCount = [];
     const maxPageCount = 7; // Define the maximum number of page numbers to show
-  
+
     // Calculate the start and end page numbers to display
     let startPage = Math.max(1, currentPage - Math.floor(maxPageCount / 2));
     let endPage = Math.min(startPage + maxPageCount - 1, totalPages);
-  
+
     // Adjust startPage if endPage is at the end of totalPages
     startPage = Math.max(1, endPage - maxPageCount + 1);
-  
+
     for (let i = startPage; i <= endPage; i++) {
       if (
         i === 1 ||
@@ -136,7 +139,6 @@ const Gallery = () => {
     }
     return pageCount;
   };
-  
 
   return (
     <div id="home">
@@ -245,10 +247,11 @@ const Gallery = () => {
         <Popup
           message={
             <>
-              <h2>Details of {selectedPhoto.title}</h2>
-              <p>
+              <h2>Details of "{selectedPhoto.title}"</h2>
+              <p style={{ marginTop: "25px" }}>
                 <b>Album Id:</b> {selectedPhoto.albumId}
               </p>
+
               <p>
                 <b>Id:</b> {selectedPhoto.id}
               </p>
