@@ -104,7 +104,7 @@ const Gallery = () => {
 
   const renderPageNumbers = () => {
     const pageCount = [];
-    const maxPageCount = 7; // Define the maximum number of page numbers to show
+    const maxPageCount = 7;
 
     // Calculate the start and end page numbers to display
     let startPage = Math.max(1, currentPage - Math.floor(maxPageCount / 2));
